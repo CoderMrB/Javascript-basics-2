@@ -6,8 +6,10 @@ function guess(){
         let guess = prompt("Please enter the password!")
         if (guess === correctPassword){
             return alert(secret)
+        }else if (i === 2){            
+        alert("Sorry! That was your last try. This website will now self destruct.")
         }else{
-            alert(`That's wrong! Try again. You have ${3-(i+1)} attempts left`)
+          alert(`That's wrong! Try again. You have ${3-(i+1)} attempts left`)
         }
     }
 }
